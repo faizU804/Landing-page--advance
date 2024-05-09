@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.4;
+    font-weight: 400px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-sec{
+    background-image: url(developer.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textcontent{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.lg-text{
+    font-size: 72px;
+    font-weight: 400px;
+}
+
+.blackbox{
+  background-color: black;
+}
+.blackbox h2{
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    font-weight: 300px;
+}
+
+.blackbox h2 span{
+    font-size: 100px;
+}
+
+
+/* cards */
+
+ .Work{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+ max-width: 320px;
+ margin: 20px 0px;
+ height: 415px;
+ border-radius: 10px;
+ box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+} 
+.text{
+    padding: 10px;
+}
+.content h2{
+    margin-bottom: 5px;
+}
+
+.content:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 5px 5px rgb(1, 1, 1 , 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.bottom-sec{
+    display: flex;
+}
+
+.contact{
+    background-color: #515603;
+}
+.about-me{
+    background-color: #722300;
+}
+
+.contact, .about-me{
+    min-height: 300px;
+    padding: 20px;
+    color: white;
+}
+.contact h2, .about-me h2{
+    font-size: 40px;
+}
+
+.contact p , .about-me p{
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+@media (max-width:786px){
+    .hero-sec{
+        min-height: 50vh;
+    }
+    .textcontent{
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .lg-text{
+        font-size: 30px;
+    }
+    .blackbox h2{
+        font-size: 20px;
+    }
+    .blackbox h2 span{
+        font-weight: 400px;
+        font-size: 30px;
+}
+.bottom-sec{
+    flex-direction: column;
+}
+h1{
+    font-size: 32px;
+}
+.about-me h2 , .contact h2{
+    font-size: 32px;
+}
+}
